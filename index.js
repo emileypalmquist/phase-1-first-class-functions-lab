@@ -1,1 +1,3 @@
-// Code your solution in this file!
+function playMusic(music) {
+  console.log(music);
+}
