@@ -15,7 +15,7 @@ const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 // the returned function is going to multiply fare by multiplier
 
 function createFareMultiplier(multiplier = 1) {
-  return (fare) => {
+  return function (fare) {
     return fare * multiplier;
   };
 }
@@ -26,6 +26,11 @@ function createFareMultiplier(multiplier = 1) {
 // assign to the function returned from createFareMultiplier (invoke)
 // pass 2 as the argument to createFareMultiplier
 
+/*
+
+closure => checkout https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
+*/
 const fareDoubler = createFareMultiplier(2);
 
 // fareTripler() — Declare a variable with const and assign a function returned by createFareMultiplier() to it. Invoke createFareMultiplier() in such a way that the new fareTripler() function accepts a fare as its lone argument and triples it.
