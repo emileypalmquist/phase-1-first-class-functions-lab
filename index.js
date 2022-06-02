@@ -5,3 +5,4 @@ const returnFirstTwoDrivers = (arryOfDrivers) => {
 const returnLastTwoDrivers = function (drivers) {
   return drivers.slice(-2);
 };
+
